@@ -4,7 +4,7 @@ let numberOfToppings=7;
 
 console.log(pizzaPlace, typeof(pizzaPlace));
 console.log(numberOfToppings, typeof(numberOfToppings));
-console.log(pizzaPlace, `has`, numberOfToppings, `toppings;`);
+console.log(`${pizzaPlace} has ${numberOfToppings}, toppings`);
 
 if(numberOfToppings<10){
   console.log("Quality, not quantity.")
