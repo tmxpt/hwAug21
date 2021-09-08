@@ -4,7 +4,7 @@
 // then return the parameters added together
 function funcw2Params(x=0, y=1, ...z){
     console.log(x, y);
-    console.log(`This is the rest operator`, z,`\n);
+    console.log(`This is the rest operator`, z,`\n`);
     return(x+y);
 }
 
