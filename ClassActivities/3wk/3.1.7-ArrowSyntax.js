@@ -40,8 +40,9 @@ const sumTwoNumbers = (num1, num2) => {
   return sum;
 }
 
-console.log(`myNumberFunction:: ${myNumberFunction(10)}`); //myNumberFunction
-console.log((`greet:: ${greet("Harold Donniver Tregold")}`)); //greet
-console.log((`timeOfDayGreet:: ${timeOfDayGreet("jameston","Evening")}`)); //timeOfDayGreet
-console.log((`tripleAndHalf:: ${tripleAndHalf(10)}`)); //tripleAndHalf
-console.log((`sumTwoNumbers:: ${sumTwoNumbers(10,11)}`)); //sumTwoNumbers
+//3.1.7 Activity Validity Checker
+console.log(`--myNumberFunction:: ${myNumberFunction(10)}`); //myNumberFunction
+console.log((`--greet:: ${greet("Harold Donniver Tregold")}`)); //greet
+console.log((`--timeOfDayGreet:: ${timeOfDayGreet("jameston","Evening")}`)); //timeOfDayGreet
+console.log((`--tripleAndHalf:: ${tripleAndHalf(10)}`)); //tripleAndHalf
+console.log((`--sumTwoNumbers:: ${sumTwoNumbers(10,11)}`)); //sumTwoNumbers

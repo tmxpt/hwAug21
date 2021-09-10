@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomoki Poth</title>
+    <style>
+       /* 1. add a link to this file in index.html */
+/* 2. use the following types of selectors:
+    - class & id selectors
+    - chain a class selector onto a element selector
+    - group two or more selectors
+    - select all the child list items from one of your lists
+    - select an element that is a sibling of another element */
+/* 3. Box Model:
+    - use the universal selector to give all elements a border
+    - add padding and margin on some elements
+    - add padding and margin only on certain sides of some elements */
+/* 4. use a pseudo-class to have at least one element change color when someone hovers over it */
+/* CSS Properties (MDN): https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index */
+*{box-sizing:border-box;border:1px solid #aa66aa}
+
+body{background-color:#999;}
+
+nav ul{list-style-type: none; display:inline-block;text-decoration-none;margin:0;padding:0;text-align:center;}
+nav ul a{text-decoration: none; margin:0;padding:0}
+nav ul a li{color:#fff;text-decoration: none;background-color:pink; margin:0;padding:10px; border-left:2px solid red;float:left;}
+nav ul a li:hover{background-color:red;display:inline-block;}
+
+main a{color:#fff; text-decoration: none;}
+main a:hover{color:#55ccff;font-weight:bold;}
+main a:active{color:#cc0000;}
+main a:visited{color:#cc99cc;}
+
+.mydiv1 a{color:#fff; text-decoration:line-through}
+.mydiv1 a:hover{color:#cc0000;text-decoration:overline underline}
+.mydiv1 a:active{color:#cc0000;}
+.mydiv1 a:visited{color:#ff9999;}
+
+
+footer{background-color:#78ccff;height:250px;margin:0;float:left;display:block;width:100%;text-align:center;color:black;}
+footer ul > li{list-style-type: none;}
+
+/*! my id's*/
+#surrounding{float:left;margin:15%;
+    margin-top:10px;margin-bottom:0;
+    background-color:#353535;color:#fff;
+    width:70%;}
+
+    </style>
+</head>
+<body>
+    <div id=surrounding>
+    <nav id=navi>
+        <ul>
+            <a href=#item1><li>Item 1</li></a>
+            <a href=#item2><li>Item 2</li></a>
+            <a href=#item3><li>Item 3</li></a>
+            <a href=#item4><li>Item 4</li></a>
+        </ul>
+    </nav>
+    <main>
+        <h1>Top five best things!!</h1>
+            <ol>
+                <li>Ice cream!</li>
+                <li>Chocolate!</li>
+                <li>Pets!</li>
+                <li>World Domination!</li>
+                <li>Sports!</li>
+            </ol>
+
+
+        <h2>My h2 element</h2>
+        <p>Let me quickly type out paragraph full of lorem ipsum dolor samet omosiroi koto wo 書くのはちょっと難しいので I am typing things as they come into my head. Dolphins are one of the most intelligent animals on earth. As such, they are capable of learning languages and people's faces with surprising accuracy. They can recognize their caretakers out of a group just from their voices. These are smart creatures.<br>
+        There are many kinds of color systems that computers can parse from input numbers. There are rgb, hex, hsb, cmyk, and likely others that I may be unaware of. RGB is red green blue, hsb is highlight, saturation, black, cmyk is (I don't know), and hex uses a 6 digit code that represent red, greenn blue, with #000000 being black and #ffffff being white. One cool trick youc an use is to use #fff to represent #ffffff in css. This works for any time all 6 digits of hex are the same. CSS is cool.
+        <br>
+        Potential Vagabond Javelin Horror Home Yourself Travel Grains Bloated Grey Xylophone Xenophilic Dreidel Desden Caramel Landscape Undperturbed Cassidy Queen Regality Princedom Kingdom Feline Canine Controlled Microcomputer Traffic Digitized Carrot Entertained Waffle
+        </p>
+        <h2>This is my image</h2>
+            <img src="https://cdn.pu.nl/article/taken_king_square.png" alt="auryx">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <h2 id=item2>Item 2!</h2>
+            <div class="mydiv1">
+            <a href="#navi">Click this to go back to the navigation at the top (mydiv1 link)</a>
+           </div>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <a href="#navi">Click this to go back to the navigation at the top (mydiv1 link)</a>
+            <br><br><br>
+            <footer>
+                <ul>
+                    <li>item</li>
+                    <li>item</li>
+                    <li>item</li>
+                    <li>item</li>
+                    <li>item</li>
+                    <li>item</li>
+                    <li>item</li>
+                </ul>
+            </footer>
+    </main>
+    </div> 
+</body>
+</html>
+
+<!--Using HTML, create a bio or portfolio that includes the following:
+An updated title tag
+At least two lists
+Multiple headings and at least one paragraph
+At least one image
+At least two links-->

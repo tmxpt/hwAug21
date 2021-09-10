@@ -1,0 +1,45 @@
+/* 1. add a link to this file in index.html */
+/* 2. use the following types of selectors:
+    - class & id selectors
+    - chain a class selector onto a element selector
+    - group two or more selectors
+    - select all the child list items from one of your lists
+    - select an element that is a sibling of another element */
+/* 3. Box Model:
+    - use the universal selector to give all elements a border
+    - add padding and margin on some elements
+    - add padding and margin only on certain sides of some elements */
+/* 4. use a pseudo-class to have at least one element change color when someone hovers over it */
+/* CSS Properties (MDN): https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index */
+*{box-sizing:border-box;border:1px solid #aa66aa}
+
+body{background-color:#999;}
+
+nav ul{list-style-type: none; display:inline-block;text-decoration-none;margin:0;padding:0;text-align:center;}
+nav ul a{text-decoration: none; margin:0;padding:0}
+nav ul a li{color:#fff;text-decoration: none;background-color:pink; margin:0;padding:10px; border-left:2px solid red;float:left;}
+nav ul a li:hover{background-color:red;display:inline-block;}
+
+main a{color:#fff; text-decoration: none;}
+main a:hover{color:#55ccff;font-weight:bold;}
+main a:active{color:#cc0000;}
+main a:visited{color:#cc99cc;}
+main > *{margin:2%;}
+
+.changescolor{background-color: #fff; color:black;}
+.changescolor:hover{background-color: #67abff;}
+
+.mydiv1 a{color:#fff; text-decoration:line-through}
+.mydiv1 a:hover{color:#cc0000;text-decoration:overline underline}
+.mydiv1 a:active{color:#cc0000;}
+.mydiv1 a:visited{color:#ff9999;}
+
+
+footer{background-color:#78ccff;height:250px;margin:0;float:left;display:block;width:100%;text-align:center;color:black;}
+footer ul > li{list-style-type: none;}
+
+/*! my id's*/
+#surrounding{float:left;margin:15%;
+    margin-top:10px;margin-bottom:0;
+    background-color:#353535;color:#fff;
+    width:70%;}
