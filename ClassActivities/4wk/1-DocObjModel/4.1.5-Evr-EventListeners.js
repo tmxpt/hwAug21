@@ -1,6 +1,6 @@
 // add an event listener to the dog picture that listens for a "click" and gives an alert
 const myDoggie=document.querySelector(`#dog-picture`);
-myDoggie.addEventListener("dblclick", () => (alert("image was double clicked")))
+myDoggie.addEventListener("dblclick", () => (alert("image was double clicked")));
 // add an event listener to the list items in the class schedule that listens for a "mouseover" event and changes its background color
 const myClassSchedule=document.querySelector("#class-schedule-list");
 myClassSchedule.addEventListener("mouseover", event =>(event.target.style.backgroundColor="red"));
