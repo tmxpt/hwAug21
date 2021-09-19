@@ -14,7 +14,7 @@ greetCustomer(pizzaToppings);
 
 //! 3
 function getPizzaOrder(size, crust, ...toppings) {
-    console.log(`#3`,`One ${size} ${crust} with ${toppings} coming up`);
+    console.log(`#3`,`One ${size} ${crust} crust pizza with ${toppings} coming up`);
 };
 
  getPizzaOrder(`small`, `thin`, `peperoni`, `cheese`, `olives`, `sardines`);
