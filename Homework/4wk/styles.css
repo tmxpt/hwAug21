@@ -15,4 +15,5 @@ nav ul a li{display:inline-block;}
 
 .mapImageOne img{display:block;border:5px solid grey;}
 .mapImageOne::after{content:"United States of America, Map, 1818, Lizars Edinburgh"; font-family:"Lucida Sans"; border:5px solid grey;}
- 
+
+footer{background-color:#ccc;color:#000;border-top:5px solid #ccccff;}
