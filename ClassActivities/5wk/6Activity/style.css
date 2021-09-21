@@ -18,8 +18,23 @@
   .flex2 > * {
     border: 1px dashed;
   }
+
+  .flex2 div{min-height:150px;}
   
+  .flex3 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  }
+
+  .flex3 > * {
+    border: 1px dashed;
+  }
+
+  .flex3 div{min-height:150px;}
   @media print {
+
+    
     .flex > * {
       border: none;
     }
