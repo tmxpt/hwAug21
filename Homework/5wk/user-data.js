@@ -1,4 +1,4 @@
-const userdata = {
+const userdata = [
     {
       "id": 1,
       "name": "Leanne Graham",
@@ -229,6 +229,32 @@ const userdata = {
         "bs": "target end-to-end models"
       }
     }
-};
+];
 
-  console.log(userdata);
+//create and print a list of phone numbers
+
+
+const phoneNumbers = userdata.map((val, i, userdata)=>{
+    return{
+        phone: userdata[i].phone
+    }
+});
+console.log(`phoneNumbers:`,phoneNumbers);
+
+const denwaBangou = userdata.map((val)=>{
+    return(val.phone)
+});
+// console.log(`denwaBangou: ${tempObject.denwaBangou}`);
+
+let tempObject={denwaBangou:denwaBangou};
+console.log(tempObject);    //the object console log is prettier
+ 
+
+//create and print a list of website and email pairs (pair them in a string, array, or object)
+
+const webEmailPair1= userdata.map((val,i,userdata)=>{
+    return{email:userdata[i].email,
+           website:userdata[i].website}
+})
+
+console.log(webEmailPair1);
