@@ -27,6 +27,32 @@
     font-family: var(--font-family1) ;
   }
   
+  .boxflex > div {
+    border:1px solid orange;
+    color:red;
+  }
+  .boxflex{
+    display:flex;
+    flex-direction: row;
+    flex:200px;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    align-content:space-evenly;
+    border:1px solid green;
+    height:100px;
+    margin:50px auto;
+    padding:15px 10px;
+  }
+
+  nav > ul > li {background-color:#6b6b6b;color:#00ccff}
+  nav > ul > li:hover {background-color:#ccc;}
+
+  body{background:#1f1f1f;}
+
+  footer > a{text-decoration:none;font-weight:bold;}
+  footer > a:hover{color:#fff;text-decoration:underline;}
+  footer > a:visited{color:#ccc}
+
   /**** For Smaller screens ******/
   
   @media (max-width: 549px){
@@ -63,14 +89,7 @@
     }
   }
   
-  nav > ul > li {background-color:#6b6b6b;color:#00ccff}
-  nav > ul > li:hover {background-color:#ccc;}
 
-  body{background:#1f1f1f; color:#9999ff}
-
-  footer > a{text-decoration:none;font-weight:bold;}
-  footer > a:hover{color:#fff;text-decoration:underline;}
-  footer > a:visited{color:#ccc}
   
   /***** For Bigger screens *****/
   
