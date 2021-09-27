@@ -12,7 +12,8 @@ html {
   }
   
   img {
-    height: 100%;
+    height: auto;
+    max-width:100%;
   }
   
   div {
@@ -20,19 +21,84 @@ html {
     margin: 10px;
   }
   
+  h2{
+    border-width:3px 0;
+    border-style:solid;
+    border-color:burlywood;
+    margin:auto;
+    margin-top:10px;
+    width:90%;
+  }
+
+  body a{color:teal;}
+  body a:hover{color:darkseagreen;}
+  body a:visited{color:slategray;}
+  body a:active{color:mediumspringgreen;}
+  #top{
+    display:flex;
+    justify-content:space-around;
+  }
   #introPic {
-    float: left;
+    overflow:auto;
+    width:500px;
+    height:245px;
   }
   
   #bio {
-    float: right;
+    overflow:auto;
+    display:block;
   }
   #bio > li {
     padding: 2px;
   }
   
+  #achievements{
+    list-style-type:square;
+  }
+
   #pro {
-    width: auto;
+    width: inherit;
   }
 
   #form-submission{padding-bottom:40px;}
+
+
+  /*
+  In the styles.css file, fix the styling for the site, and create a media query that fixes the site to correctly display on the "iPhone 6/7/8" view in DevTools.
+  
+  Focus on the following:
+    The #bio <ul> at the top of the page
+    <img> tags
+    <div> tags
+    links
+    */
+
+
+  @media (max-width:400px){
+    #proCareer{width:auto;height:auto}
+    body{color:rgba(0,0,0,0.4)}
+  }
+  /*funny text opacity*/
+  @media (max-width:600px){
+    #achievements{
+      list-style-type:circle;
+    }
+    #top{flex-wrap:wrap;
+      justify-content:center;}
+      body{color:rgba(0,0,0,0.5)}
+  }
+  }
+
+  @media (max-width:1400px){
+    body{color:rgba(0,0,0,0.9)}
+  }
+
+  @media (max-width:1200px){
+    body{color:rgba(0,0,0,0.8)}
+  }
+  @media (max-width:1000px){
+    body{color:rgba(0,0,0,0.7)}
+  }
+  @media (max-width:800px){
+    body{color:rgba(0,0,0,0.6)}
+  }
